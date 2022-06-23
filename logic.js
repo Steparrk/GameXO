@@ -31,13 +31,12 @@ function click(row, col) {
   
   board[row][col] =players[activePlayer];
   
-  
   function sumCombo(array) {
     for(let t = 0; t<array.length; t++){
       for(let k = 0; k<array[t].length; k++){
+
         arrayVertical[t][k] = board[k][t];
         arrayDiagonal[0][k] = board[k][k];
-      
       }
     }
         arrayDiagonal[1][0] = board[0][2];
@@ -48,6 +47,7 @@ function click(row, col) {
   function checkSymbol(symbol) {
     return symbol == players[activePlayer];
   }
+
   function checkComboArray(array) {
     for(i = 0; i<array.length; i++){
       if(array[i].every(checkSymbol)){
@@ -69,5 +69,4 @@ function click(row, col) {
   }else{
     activePlayer = 0;
   }
-  
 }
