@@ -46,7 +46,7 @@ function click(row, col) {
     }
 
   function checkSymbol(symbol) {
-    return symbol == players[activePlayer]
+    return symbol == players[activePlayer];
   }
   function checkComboArray(array) {
     for(i = 0; i<array.length; i++){
