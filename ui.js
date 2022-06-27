@@ -40,7 +40,7 @@ function renderBoard(board) {
           ${value || ''}
         </div>
       `);
-    }
+   }
   }
   boardEl.innerHTML = fields.join('');
 }
